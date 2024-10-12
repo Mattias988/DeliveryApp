@@ -18,18 +18,6 @@ DeliveryApp to aplikacja do zamawiania jedzenia online, której backend jest zbu
     Frontend: Angular 16
     Migracje bazy danych: Flyway
 
-📦 Struktura projektu
-
-css
-
-DeliveryApp/
-├── Backend/
-│   ├── src/
-│   └── pom.xml
-├── Frontend/
-│   └── src/
-└── README.md
-
 📂 Backend (Spring Boot)
 
     JPA do zarządzania encjami (Product, Restaurant).
