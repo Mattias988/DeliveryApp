@@ -1,9 +1,5 @@
-package com.deliveryapp.DeliveryApp.Entity;
+package com.deliveryapp.DeliveryApp.DTO;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,13 +7,7 @@ import java.time.LocalTime;
 
 @Getter
 @Setter
-@Entity
-public class Restaurant {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class RestaurantDTO {
     private String name;
     private String address;
     private String phoneNumber;
