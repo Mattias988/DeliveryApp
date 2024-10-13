@@ -7,9 +7,7 @@ import com.deliveryapp.DeliveryApp.Repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.deliveryapp.DeliveryApp.Entity.Product;
-import com.deliveryapp.DeliveryApp.Enum.ProductCategory;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,9 +19,6 @@ public class ProductService {
     @Autowired
     private RestaurantRepository restaurantRepository;
 
-    public List<Product> getProductsByCategory(ProductCategory category) {
-        return productRepository.findByCategory(category);
-    }
 
     public Product addProduct(ProductDTO productDTO) {
         Product product = new Product();
