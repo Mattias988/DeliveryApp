@@ -1,58 +1,59 @@
 🍕 DeliveryApp
 🚀 Spring Boot & Angular-based Food Delivery System
 
-📝 Opis projektu
+📝 Project Description
 
-DeliveryApp to aplikacja do zamawiania jedzenia online, której backend jest zbudowany w Java Spring Boot, a frontend w Angular. Projekt zarządza restauracjami, produktami oraz kategoriami żywności, a także umożliwia filtrowanie produktów na podstawie takich cech jak "Gluten Free" czy "Lactose Free".
-🌟 Funkcjonalności
+DeliveryApp is an online food ordering application, with the backend built in Java Spring Boot and the frontend in Angular. The project manages restaurants, products, and food categories, and allows filtering of products based on characteristics such as "Gluten Free" or "Lactose Free".
 
-    CRUD dla produktów: Dodawanie, usuwanie, edytowanie oraz wyświetlanie produktów z menu restauracji.
-    Zarządzanie restauracjami: Każdy produkt jest przypisany do konkretnej restauracji.
-    Filtrowanie produktów: Możliwość filtrowania produktów na podstawie kategorii (np. Vegan, Gluten Free).
-    Obsługa relacji Many-to-One: Relacja między restauracjami a produktami.
+🌟 Features
 
-💻 Technologia
+    CRUD for products: Add, remove, edit, and display restaurant menu products.
+    Restaurant management: Each product is assigned to a specific restaurant.
+    Product filtering: Ability to filter products based on categories (e.g., Vegan, Gluten Free).
+    Many-to-One relationship support: Relationship between restaurants and products.
+
+💻 Technology Stack
 
     Backend: Spring Boot (REST API, Hibernate, Flyway)
-    Baza danych: PostgreSQL (wersja 15.x)
+    Database: PostgreSQL (version 15.x)
     Frontend: Angular 16
-    Migracje bazy danych: Flyway
+    Database migrations: Flyway
 
 📂 Backend (Spring Boot)
 
-    JPA do zarządzania encjami (Product, Restaurant).
-    Flyway do migracji bazy danych (tworzenie tabel, aktualizacje schematów).
+    JPA for managing entities (Product, Restaurant).
+    Flyway for database migrations (table creation, schema updates).
 
 📂 Frontend (Angular)
 
-    Komponenty Angular do wyświetlania restauracji, produktów oraz filtrów.
-    Obsługa zapytań HTTP do API backendu.
+    Angular components for displaying restaurants, products, and filters.
+    Handling HTTP requests to the backend API.
 
-⚙️ Wymagania systemowe
+⚙️ System Requirements
 
     Java 17+
     Maven 3+
     PostgreSQL 15.x
-    Node.js + npm (do frontendu)
-    Angular CLI (opcjonalnie, do zarządzania projektem frontendowym)
+    Node.js + npm (for the frontend)
+    Angular CLI (optional, for managing the frontend project)
 
-🛠️ Instalacja
+🛠️ Installation
 Backend
 
-    Sklonuj repozytorium:
+    Clone the repository:
 
     bash
 
-git clone https://github.com/TwojNazwaUzytkownika/DeliveryApp.git
+git clone https://github.com/YourUsername/DeliveryApp.git
 
-Przejdź do folderu backendu i zbuduj projekt:
+Navigate to the backend folder and build the project:
 
 bash
 
 cd Backend
 mvn clean install
 
-Uruchom aplikację:
+Run the application:
 
 bash
 
@@ -60,27 +61,27 @@ bash
 
 Frontend
 
-    Przejdź do folderu frontendu:
+    Navigate to the frontend folder:
 
     bash
 
 cd Frontend
 
-Zainstaluj zależności:
+Install dependencies:
 
 bash
 
 npm install
 
-Uruchom aplikację:
+Run the application:
 
 bash
 
     ng serve
 
-🔧 Konfiguracja
+🔧 Configuration
 
-Skonfiguruj połączenie z bazą danych w pliku application.properties:
+Configure the database connection in the application.properties file:
 
 properties
 
@@ -90,16 +91,16 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
-🧪 Testy
+🧪 Testing
 
-Aby uruchomić testy jednostkowe dla backendu:
+To run unit tests for the backend:
 
 bash
 
 mvn test
 
-📚 Przykład zapytania do API
-Dodawanie produktu (POST /api/products)
+📚 API Request Example
+Adding a product (POST /api/products)
 
 json
 
