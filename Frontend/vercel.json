@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "public": "dist/frontend",
     "rewrites": [
       { "source": "/(.*)", "destination": "/" }
     ]
